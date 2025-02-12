@@ -150,7 +150,7 @@ describe('central de atendimento ao cliente TAT', ()=> {
 
     it('Verifica que a politica de privacidade abre em outra aba sem a necessidade de um clique', ()=>{
       cy.contains('a','Política de Privacidade')
-        .should('have.attr','hrefmmmm', 'privacy.html')
+        .should('have.attr','href', 'privacy.html')
         .and('have.attr','target', '_blank')
     })
     it('acessa a página da politica de privacidade removendo o target e então clicando no link', ()=>{
